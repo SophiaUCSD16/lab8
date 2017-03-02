@@ -19,6 +19,7 @@
 </head>
 
 <body>
+  {{> navigation }}
   <div class="container">
     <!-- h1 through h6 are headers. The higher the number, the smaller the header -->
     <!-- p means paragraph -->
@@ -37,7 +38,7 @@
     </div>
 
 
-    <div id="camera" class="profile">
+    <div id="camera" class="profile" >
       <canvas id="camera-canvas"></canvas>
       <video autoplay id="camera-video"></video>
       <button id="camera-button">Take Photo</button>
@@ -54,8 +55,10 @@
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/canvas-to-blob.min.js"></script>
   <script src="/js/introHCI.js"></script>
+  <!-- inlcue the facebook API -->
   {{> facebook}}
   <script src="/js/facebook.js"></script>
+  <!-- inlcue the googleMap API -->
   {{> googleMaps}}
   <script src="/js/googleMaps.js"></script>
   <script src="/js/camera.js"></script>
